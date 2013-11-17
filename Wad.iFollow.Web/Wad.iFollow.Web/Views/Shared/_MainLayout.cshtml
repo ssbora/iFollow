@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <script src="@Url.Content("~/Scripts/jquery-2.0.3.js")" type="text/javascript"></script>
+        <script src="@Url.Content("~/Scripts/jquery-2.0.3.min.js")" type="text/javascript"></script>
+        @Styles.Render("~/Content/themes/bootstrap")
+        @Styles.Render("~/Content/css")
+        <link rel="stylesheet" href="Content\themes\bootstrap-theme.css.css" />
+        <script src="@Url.Content("~/Scripts/bootstrap.js")" type="text/javascript"></script>
+        <script src="@Url.Content("~/Scripts/wall.js")" type="text/javascript"></script>
+        <link rel="stylesheet" href="Content\font-awesome\css\font-awesome.css" />
+    </head>
+    <body>
+        <header class="navbar navbar-inverse navbar-fixed-top" id="headerslide">
+            <div class="navbar-inner">
+                <div class="container">
+                        <a class ="btn btn-primary" data-target=".show-header" data-toggle="collapse" href="#" id="header_btn" ><i class="fa fa-align-justify"></i></a>
+                        <button class ="btn btn-primary" style="float:right;margin-right:-110px;margin-top:2px" id="btn_logout">Logout</button>
+                    <div class="nav-collapse collapse show-header" id="header_body">
+                <nav>
+                    <ul class="nav pull-left">
+                        <li>
+                            <a href="@Url.Action("MainPage", "Wall")" class="toolbar-element"></a>
+                            <a href="#" class="toolbar-element"></a>
+                            <a href="#" class="toolbar-element"></a>
+                            <a href="#" class="toolbar-element"></a>
+                            <a href="#" class="toolbar-element"></a>
+                            <a href="@Url.Action("Settings", "Wall")"  class="toolbar-element" id="settingsbtn"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+           </div>
+         </div>
+        </header>
+        <div id="body">
+
+            @RenderBody()
+        </div>
+        <footer>
+            
+        </footer>
+
+    </body>
+</html>
