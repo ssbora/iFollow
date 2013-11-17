@@ -326,6 +326,7 @@
     <Content Include="Views\Wall\MainPage.cshtml" />
     <Content Include="Views\Shared\_MainLayout.cshtml" />
     <Content Include="Views\Wall\_SettingsModal.cshtml" />
+    <Content Include="Views\Wall\_PostSettings.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

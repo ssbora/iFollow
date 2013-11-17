@@ -24,6 +24,13 @@ namespace Wad.iFollow.Web.Controllers
             return PartialView("_SettingsModal");
         }
 
+        public ActionResult Post()
+        {
+            ViewBag.Message = "Your posting page.";
+
+            return PartialView("_PostSettings");
+        }
+
         [HttpPost]
         public ActionResult Settings(LoginModel model)
         {
@@ -42,6 +49,26 @@ namespace Wad.iFollow.Web.Controllers
             }
             //Something bad happened
             return PartialView("_SettingsModal", model);
+        }
+
+        [HttpPost]
+        public ActionResult Post(LoginModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    SaveChanges(model);
+                    return Json(new { success = true });
+                }
+                catch (Exception e)
+                {
+                    ModelState.AddModelError("", e.Message);
+                }
+
+            }
+            //Something bad happened
+            return PartialView("_PostSettings", model);
         }
 
         static void SaveChanges(LoginModel model)

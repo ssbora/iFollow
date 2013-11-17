@@ -23,7 +23,7 @@
                     <ul class="nav pull-left">
                         <li>
                             <a href="@Url.Action("MainPage", "Wall")" class="toolbar-element"></a>
-                            <a href="#" class="toolbar-element"></a>
+                             @Ajax.ActionLink(" ", "Post", "Wall",new AjaxOptions { UpdateTargetId="body"}, new { @class = "toolbar-element" })  
                             <a href="#" class="toolbar-element"></a>
                             <a href="#" class="toolbar-element"></a>
                             <a href="#" class="toolbar-element"></a>

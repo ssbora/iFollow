@@ -810,3 +810,32 @@ border-color: #ddd;
 border-radius: 4px 4px 0 0;
 box-shadow: none;
 }
+
+/* Post allignment*/
+
+.center 
+{
+    background-color: #a6dbed;
+    width: 900px;
+    height: 500px; 
+    margin: 0 auto;
+}
+
+
+span.panelTitleTxt 
+{
+
+   display:inline-block;
+ 
+   height: 100%;
+   margin-bottom: 300px;
+   margin-top: 100px;
+   margin-left: 150px;
+   margin-right: 300px;
+  // margin: 170px;
+}
+
+textarea {
+   font-size: large;
+   font-family:Tahoma;
+} 
