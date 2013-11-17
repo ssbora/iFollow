@@ -799,3 +799,14 @@ tr.pager td {
     background: url("../Images/home.png") no-repeat;
     float:left;
 }
+
+.settings {
+height:400px;
+width:650px;
+margin-top:20px;
+background-color: green;
+border-width: 1px;
+border-color: #ddd;
+border-radius: 4px 4px 0 0;
+box-shadow: none;
+}
