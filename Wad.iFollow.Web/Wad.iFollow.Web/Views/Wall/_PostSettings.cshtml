@@ -1,19 +1,30 @@
 ﻿@{
     ViewBag.Title = "Post Page";
 }
-<div class="center">
-    <span class ="panelTitleTxt">
+<style>
+     h1 {text-shadow:2px 1px #FF0000;font-size:x-large;font-family:cursive}
+</style>
+
+<div class="wrapper">
+    <div class="dividerVertical" />
+            <h1>What are you thinking about?</h1>
             <textarea rows="7" >
             </textarea>
-           <form enctype="multipart/form-data"
-                action="http://example.org/wmqfte/file/agent/AGENT1@QM1/webuploads"
-                method="POST">
-                <button class="btn btn-primary" >Post</button>    
-               <button class="btn btn-warning" >Like</button>    
-               <button type="file"  class="btn btn-danger">Choose photo</button>
-               <button type="submit" class= "btn btn-success :hover" >Upload</button>           
-
-           </form>
-    </span>
-    
+    <div class="dividerVertical" />                 
+    <div class="row">
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button class="btn btn-primary" type="submit">Post</button>
+                <div class="divider" />
+                <button class="btn btn-warning" type="button">Like</button>
+                <div class="divider" />
+                <button class="btn btn-danger" type="button">Share</button>
+                <div class="divider" />
+                <button class="btn btn-inverse" type="button">Choose file</button>
+                <div class="divider" />
+                <button class="btn btn-success :hover" type="submit">Upload!</button>
+             
+            </span>
+        </div><!-- /input-group -->
+</div><!-- /.row -->
 </div>

@@ -48,11 +48,12 @@ namespace Wad.iFollow.Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult LogOff()
+        public ActionResult LogOff(LoginModel model, string returnUrl)
         {
             WebSecurity.Logout();
 
-            return RedirectToAction("Index", "Home");
+            return View(model);
+         //   return RedirectToAction("Index", "Home");
         }
 
         //
