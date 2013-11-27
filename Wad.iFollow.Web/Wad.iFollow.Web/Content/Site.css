@@ -814,8 +814,11 @@ box-shadow: none;
 /* Post allignment*/
 
 .wrapper {
+  
     text-align: center;
-    
+    border-style:outset;
+    border-width:medium;
+  
 }
 
 
@@ -829,4 +832,53 @@ box-shadow: none;
     width: auto;
     height: 20px;
     display: inline-block;
+}
+
+.settings {
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+line-height: 1.428571429;
+color: #333;
+margin-top:20px;
+margin-left:280px;
+height:600px;
+background-color:AppWorkspace;
+width:800px;
+border-width: 1px;
+border-color: #ddd;
+border-radius: 4px 4px 0px 0px;
+box-shadow: none;
+}
+
+#photo {
+  padding-top: 30px;
+  padding-left: 62px;
+  background-image: url('../images/camera.jpg');
+  background-repeat: no-repeat;
+  background-position: 20px 34px;
+
+}
+
+.choosephoto {
+    background-image: url('../images/camera.jpg');
+    height:50px;
+    width:50px;
+}
+
+.beautifulFont {
+
+  font-family:Algerian, serif;
+  font-size: 22px;
+  text-shadow: 4px 4px 4px #aaa;
+  color:firebrick;
+}
+
+
+#file {
+   display: none;
+}
+   
+.dummyfile input[type="text"] {
+   width: 120px;
+   display: inline;
 }

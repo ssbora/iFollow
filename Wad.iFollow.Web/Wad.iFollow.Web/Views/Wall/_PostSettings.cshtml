@@ -1,6 +1,8 @@
 ﻿@{
     ViewBag.Title = "Post Page";
 }
+
+<!-- 
 <style>
      h1 {text-shadow:2px 1px #FF0000;font-size:x-large;font-family:cursive}
 </style>
@@ -8,23 +10,82 @@
 <div class="wrapper">
     <div class="dividerVertical" />
             <h1>What are you thinking about?</h1>
-            <textarea rows="7" >
+       
+            <textarea style="width:350px;height:150px"  >
             </textarea>
-    <div class="dividerVertical" />                 
+            
+    <div class="dividerVertical"></div>                 
     <div class="row">
         <div class="input-group">
             <span class="input-group-btn">
                 <button class="btn btn-primary" type="submit">Post</button>
                 <div class="divider" />
-                <button class="btn btn-warning" type="button">Like</button>
+              
+                <button class="btn btn-inverse" type="button"><i class="fa fa-cogs"></i>Choose file</button>
                 <div class="divider" />
-                <button class="btn btn-danger" type="button">Share</button>
-                <div class="divider" />
-                <button class="btn btn-inverse" type="button">Choose file</button>
-                <div class="divider" />
-                <button class="btn btn-success :hover" type="submit">Upload!</button>
+              
              
             </span>
-        </div><!-- /input-group -->
-</div><!-- /.row -->
+        </div>
 </div>
+</div>
+-->
+
+
+<!--Add some javascript for the functionality of CHOOSE FILE-->
+<script>
+
+    $(document).ready(function () {
+
+        $('#fileselectbutton').click(function (e) {
+            $('#file').trigger('click');
+        });
+
+        $('#file').change(function (e) {
+            var val = $(this).val();
+
+            var file = val.split(/[\\/]/);
+
+            $('#filename').val(file[file.length - 1]);
+        });
+    });
+
+</script>
+
+
+<br />
+
+<div class ="col-md-12" style="height:90px"></div> <!--Empty div to leave blank space-->
+
+
+<!--Impartim ecranul in col-md-7 si col-md-5-->
+<div  data-width="760">
+ 
+  <div >
+    <div class="row">
+      <div class="col-md-7">
+        <div class ="col-md-6"></div> <!--We introduce this to place the next div in the center -->
+        <img src="Images/placeholder.png" class="col-md-6 fileupload-preview thumbnail" style="height: 300px;"></img>
+        <div class ="col-md-6"></div> <!--We introduce this to place the next div in the center -->
+        <p><textarea class="col-md-6" rows="4" style="text-align:left; font-size:medium " placeholder="Write a comment..."></textarea></p>
+      </div>
+
+      <div class="col-md-5">
+         <!--Choose File button -->
+        <div class="controls">
+          <input type="file" id="file">
+          <div class="dummyfile">
+            <a id="fileselectbutton" class="btn btn-primary" ><i class="fa fa-picture-o"></i> Pick photo</a>
+        </div>
+
+        <div class ="col-md-12" style="height:295px"></div> <!--Empty div to leave blank space-->
+        <p><input type="button" class="col-md-6 btn btn-default" style="width:120px" value="Cancel"></p>
+        
+        <div class ="col-md-12" style="height:40px"></div> <!--Empty div to leave blank space-->
+        <p><input type="button" class="col-md-6 btn btn-default" style="width:120px" value="Post"></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+

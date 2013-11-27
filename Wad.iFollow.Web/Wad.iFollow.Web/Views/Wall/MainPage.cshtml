@@ -8,14 +8,9 @@
     <div class="input-group">
         <input type="text" class="form-control" style="width:160px;float:right">
         <span class="input-group-btn">
-        <button class="btn btn-primary" style="margin-top:5px;margin-bottom:5px">Search</button>
-
-        @using (Html.BeginForm("Login", "Account"))
-        {
-            @Html.AntiForgeryToken() 
-
-            <button WebSecurity.Logout() class ="btn btn-danger" style="margin-top:5px;margin-bottom:5px" type="submit" value="Log out">Logout</button>
-        }
+        <button class="btn btn-primary" style="margin-top:5px;margin-bottom:5px">Search</button>      
+        <button WebSecurity.Logout() class ="btn btn-danger" style="margin-top:5px;margin-bottom:5px" type="submit" value="Log out">Logout</button>
+    
         </span>
     </div><!-- /input-group -->
 </div>
