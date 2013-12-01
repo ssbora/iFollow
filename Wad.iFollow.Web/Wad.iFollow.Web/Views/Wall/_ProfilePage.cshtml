@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Profile Page";
+}
+
+
+<br/>
+
+<!--Impartim partea superioara a ecranului in col-md-7 si col-md-5-->
+ 
+<div >
+    <div class="row">
+        
+                <div class="col-md-7" ">
+                    <br />
+                    <div class ="col-md-2"></div> 
+                    <img src="Images/placeholderProfile.jpg" class="col-md-3 fileupload-preview thumbnail" style="height: 140px;"></img>
+                    <br/><br/><br/>
+                    <div class ="col-md-1"></div> 
+                    <textarea class="col-md-5"  readonly="readonly" rows="3" style="background-color:#eaeaea; text-align:left; font-size:medium " placeholder="This is a sample description for my user profile page."></textarea>
+                    <div class ="col-md-12" style="height:150px"></div> <!--Empty div to leave blank space-->
+                    <div class ="col-md-4"></div> 
+                 </div>
+
+                 <div class="col-md-5" >
+                     <div class ="col-md-12" style="height: 50px"></div> <!--Empty div to leave blank space-->
+<!--
+                     <table >
+                        <tr>
+                        <td><div class="beautifulFont" >251</div></td>
+                        <td><div class="beautifulFont">105</div></td>
+                        <td><div class="beautifulFont">251</div></td>
+                        </tr>
+                        <tr>
+                        <td><div class="beautifulFont">Posts</div></td>
+                        <td><div class="beautifulFont">Followers</div></td>
+                        <td><div class="beautifulFont">Follows</div></td>
+                        </tr>
+                     </table>
+-->
+                     <div class="col-md-1"></div>
+                     <div class="col-md-1" ><div class="beautifulFont">251 Posts</div></div>
+                     <div class="col-md-1"></div>
+                     <div class="col-md-1" ><div class="beautifulFont">105 Followers</div></div>
+                     <div class="col-md-2"></div>
+                     <div class="col-md-1" ><div class="beautifulFont">72 Follows</div></div>
+                     <div class ="col-md-12" style="height:100px"></div> <!--Empty div to leave blank space-->
+                 </div>        
+             
+
+      
+    </div>
+</div>
+
+<div class="col-md-12">
+    <div class="row">
+
+        <div class="col-md-4"></div>
+        <div class="col-md-12"><img  style="width:500px; height:300px" src="Images/1.jpg"/></div>
+
+        <div class="col-md-12" style="height:25px" ></div>
+     
+        <div class="col-md-4"></div>
+        <div class="col-md-12"><img style="width:500px; height:300px" src="Images/2.jpg"/></div>
+
+        <div class="col-md-12" style="height:25px" ></div>
+     
+        <div class="col-md-4"></div>
+        <div class="col-md-12"><img style="width:500px; height:300px" src="Images/3.jpg"/></div>
+
+        <div class="col-md-12" style="height:25px" ></div>
+     
+        <div class="col-md-4"></div>
+        <div class="col-md-12"><img style="width:500px; height:300px" src="Images/4.jpg"/></div>
+    </div>   
+
+
+</div>
+<!--
+     <script type="text/javascript">
+         function doIt() {
+             var reader = new FileReader();
+             reader.onload = (function (e) {
+                 var img = new Image();
+                 img.src = e.target.result;
+                 var c = document.getElementById("canvas");
+                 var ctx = c.getContext("2d");
+                 ctx.drawImage(img, 10, 10);
+             }
+             );
+             reader.readAsDataURL(document.getElementById('userImage').files[0]);
+         }
+    </script>
+
+    <input type="file" id="userImage" />
+    <button onclick="doIt()">Render Image</button><br/>
+    <canvas id="canvas" style="border: 1px solid black; height: 400px; width: 400px;"/>
