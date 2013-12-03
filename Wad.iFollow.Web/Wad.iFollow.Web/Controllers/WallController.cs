@@ -19,7 +19,7 @@ namespace Wad.iFollow.Web.Controllers
 
         public ActionResult Settings()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Settings.";
 
             return PartialView("_SettingsModal");
         }

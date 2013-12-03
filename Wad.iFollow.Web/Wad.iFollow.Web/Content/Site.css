@@ -889,3 +889,10 @@ box-shadow: none;
 
 }
 
+.beautifulFont {
+
+  font-family:Algerian, serif;
+  font-size: 22px;
+  text-shadow: 4px 4px 4px #aaa;
+  color:firebrick;
+}
